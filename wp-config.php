@@ -1,4 +1,13 @@
 <?php
+
+//Begin Really Simple Security session cookie settings
+@ini_set('session.cookie_httponly', true);
+@ini_set('session.cookie_secure', true);
+@ini_set('session.use_only_cookies', true);
+//END Really Simple Security cookie settings
+//Begin Really Simple Security key
+define('RSSSL_KEY', 'X2zYrIYLGqUYrbo85p2PjaXNwZPBWEHCpRpXZ02g6Yc8mZetz4j289J8w7qA3qq1');
+//END Really Simple Security key
 /**
  * The base configuration for WordPress
  *
