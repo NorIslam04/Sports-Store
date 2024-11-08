@@ -57,7 +57,7 @@ class Module extends BaseModule {
 			}
 			?>
 			<script type='text/javascript'>
-				const lazyloadRunObserver = () => {
+				const lazyloadRunObserver1 = () => {
 					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
 					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
 						entries.forEach( ( entry ) => {
@@ -79,7 +79,7 @@ class Module extends BaseModule {
 					'elementor/lazyload/observe',
 				];
 				events.forEach( ( event ) => {
-					document.addEventListener( event, lazyloadRunObserver );
+					document.addEventListener( event, lazyloadRunObserver1 );
 				} );
 			</script>
 			<?php
