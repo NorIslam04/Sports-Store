@@ -2,5 +2,5 @@ services:
   - type: web
     name: sports-store
     env: php
-    buildCommand: "" # Pas besoin de commande de build pour PHP
-    startCommand: php -S 0.0.0.0:80 # Commande pour démarrer le serveur PHP
+    buildCommand: echo "No build needed"
+    startCommand: php -S 0.0.0.0:10000
